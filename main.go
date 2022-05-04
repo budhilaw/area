@@ -40,7 +40,7 @@ func main() {
 	}()
 
 	mysqlRepo := repository.NewMysqlAreaRepository(dbConn)
-	contentType := "persegi panjang"
+	contentType := "persegi panjang sekali"
 	err = mysqlRepo.InsertArea(20, 10, contentType)
 	if err != nil {
 		log.Println(err.Error())
